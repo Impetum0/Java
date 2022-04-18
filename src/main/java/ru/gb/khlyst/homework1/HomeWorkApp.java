@@ -6,6 +6,7 @@ public class HomeWorkApp {
     public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
+        printColor();
     }
 
     public static void printThreeWords() {
@@ -22,12 +23,26 @@ public class HomeWorkApp {
         System.out.println("Print b");
         int b = scanner.nextInt();
         int result = a + b;
-            if (result >= 0){
-                System.out.println("Сумма положительная");
-            }
-            else {
-                System.out.println("Сумма отрицательная");
-            }
+        if (result >= 0) {
+            System.out.println("Сумма положительная");
+        } else {
+            System.out.println("Сумма отрицательная");
         }
     }
+
+    public static void printColor() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите показатель");
+        int value = scanner.nextInt();
+        if (value <= 0){
+            System.out.println("Красный");
+        }
+        if ( value > 0 && value <= 100 ){
+            System.out.println("Желтый");
+        }
+        if (value > 100){
+            System.out.println("Зеленый");
+        }
+    }
+}
 
