@@ -6,6 +6,7 @@ public class Homework2 {
     public static void main(String[] args) {
         System.out.println(Task1(6, 5));
         Task2();
+        System.out.println(Task3(6));
     }
 
     public static boolean Task1(int a, int b) {
@@ -22,5 +23,9 @@ public class Homework2 {
         else {
             System.out.println("negative");
         }
+    }
+
+    public static boolean Task3(int a) {
+        return a < 0;
     }
 }
