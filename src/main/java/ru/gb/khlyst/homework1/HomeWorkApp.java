@@ -25,32 +25,32 @@ public class HomeWorkApp {
         int b = scanner.nextInt();
         int result = a + b;
         if (result >= 0) {
-            System.out.println("Сумма положительная");}
+            System.out.println("positive");}
         else {
-            System.out.println("Сумма отрицательная");
+            System.out.println("negative");
         }
     }
 
     public static void printColor() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите показатель");
+        System.out.println("print value");
         int value = scanner.nextInt();
         if (value <= 0){
-            System.out.println("Красный");
+            System.out.println("Red");
         }
         if ( value > 0 && value <= 100 ){
-            System.out.println("Желтый");
+            System.out.println("Yellow");
         }
         if (value > 100){
-            System.out.println("Зеленый");
+            System.out.println("Green");
         }
     }
 
     public static void compareNumbers() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите a");
+        System.out.println("Print a");
         int a = scanner.nextInt();
-        System.out.println("Введите b");
+        System.out.println("Prinnt b");
         int b = scanner.nextInt();
         if (a >= b) {
             System.out.println("a >= b");
